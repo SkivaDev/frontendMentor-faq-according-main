@@ -12,5 +12,14 @@ body {
 }
 
 .centrear {
-  left: calc(50% - 480px);
+  left: calc(50% - 180px);
+}
+.shadow {
+  box-shadow: 0 11px 30px 0 #e8c9eb;
+}
+
+@media (min-width: 768px) {
+  .centrear {
+    left: calc(50% - 300px);
+  }
 }

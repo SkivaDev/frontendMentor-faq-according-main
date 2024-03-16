@@ -3,34 +3,86 @@ import "../styles/globals.css";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<main class="w-full h-screen">
-			<div class="relative w-full h-72 bg-dark-purple bg-pattern-desktop">
-				<div class="absolute bottom-[-18px] max-w-[960px] w-full mx-[2.375rem] bg-white centrear rounded-xl border border-black">
-					<div class="flex items-center">
-						<img src="./images/icon-star.svg" alt="icon star">
-						<h1>FAQs</h1>
-					</div>
-					<div>
-						<details>
-							<summary class="flex justify-between py-6 font-semibold cursor-pointer hover:text-purple">
-								<span>What is Frontend Mentor, and how it will help me?</span>
-								<img src="./images/icon-plus.svg" alt="icon plus">
-							</summary>
-							<p>Frontend Mentor offers realistic coding challenges to help developers improve their 
-								frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
-								all levels and ideal for portfolio building.</p>
-						</details>
-					</div>
-				</div>
-			</div>
-		</main>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <main class="w-full h-screen">
+      <div class="relative w-full h-72 bg-dark-purple bg-pattern-desktop">
+        <div
+          class="absolute top-[160px] md:max-w-[600px] max-w-[360px] w-full px-[2.375rem] pt-10 pb-4 bg-white centrear rounded-xl border shadow"
+        >
+          <div class="flex gap-7 items-center text-[3.5rem] font-bold">
+            <img src="./images/icon-star.svg" alt="icon star" />
+            <h1>FAQs</h1>
+          </div>
+          <div>
+            <details>
+              <summary
+                class="flex justify-between py-6 font-semibold cursor-pointer hover:text-purple text-dark-purple text-lg"
+              >
+                <span>What is Frontend Mentor, and how it will help me?</span>
+                <img src="./images/icon-plus.svg" alt="icon plus" />
+              </summary>
+              <p class="text-grayish-purple pb-6">
+                Frontend Mentor offers realistic coding challenges to help
+                developers improve their frontend coding skills with projects in
+                HTML, CSS, and JavaScript. It's suitable for all levels and
+                ideal for portfolio building.
+              </p>
+            </details>
+			<hr class="border">
+            <details>
+              <summary
+                class="flex justify-between py-6 font-semibold cursor-pointer hover:text-purple text-dark-purple text-lg"
+              >
+                <span>Is Frontend Mentor free?</span>
+                <img src="./images/icon-plus.svg" alt="icon plus" />
+              </summary>
+              <p class="text-grayish-purple pb-6">
+                Yes, Frontend Mentor offers both free and premium coding
+                challenges, with the free option providing access to a range of
+                projects suitable for all skill levels.
+              </p>
+            </details>
+			<hr>
+            <details>
+              <summary
+                class="flex justify-between py-6 font-semibold cursor-pointer hover:text-purple text-dark-purple text-lg"
+              >
+                <span>Can I use Frontend Mentor projects in my portfolio?</span>
+                <img src="./images/icon-plus.svg" alt="icon plus" />
+              </summary>
+              <p class="text-grayish-purple pb-6">
+                Yes, you can use projects completed on Frontend Mentor in your
+                portfolio. It's an excellent way to showcase your skills to
+                potential employers!
+              </p>
+            </details>
+			<hr>
+            <details>
+              <summary
+                class="flex justify-between py-6 font-semibold cursor-pointer hover:text-purple text-dark-purple text-lg"
+              >
+                <span
+                  >How can I get help if I'm stuck on a Frontend Mentor
+                  challenge?</span
+                >
+                <img src="./images/icon-plus.svg" alt="icon plus" />
+              </summary>
+              <p class="text-grayish-purple pb-6">
+                The best place to get help is inside Frontend Mentor's Discord
+                community. There's a help channel where you can ask questions
+                and seek support from other community members.
+              </p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
